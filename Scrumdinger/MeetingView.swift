@@ -29,7 +29,7 @@ struct MeetingView: View {
         .padding()
         .foregroundColor(scrum.color.accessibleFontColor)
         .onAppear {
-            // The timer resets each time an instance of MeetingView shows on screen, indicating that a meeting should begin.
+            // The timer resets each time an instance of MeetingView appears on screen, indicating that a meeting should begin.
             scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
             
             // ScrumTimer calls this action (a closure) when a speaker’s time expires.
@@ -40,8 +40,12 @@ struct MeetingView: View {
             }
             scrumTimer.startScrum()
         }
+        // when the MeetingView disappears, executes this closure
         .onDisappear {
             scrumTimer.stopScrum()
+            // create a History and insert it into scrum.history array
+            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrumTimer.secondsElapsed / 60)
+            scrum.history.insert(newHistory, at: 0)
         }
     }
 }
