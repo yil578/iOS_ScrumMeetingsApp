@@ -19,6 +19,10 @@
 		5A2BA357264E3F7200F882B4 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2BA356264E3F7200F882B4 /* Color+Codable.swift */; };
 		5A2BA359264E3F7800F882B4 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2BA358264E3F7700F882B4 /* DailyScrum.swift */; };
 		5A2BA35C264E400A00F882B4 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A2BA35B264E400A00F882B4 /* ding.wav */; };
+		5A2BA35E264ED12800F882B4 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2BA35D264ED12800F882B4 /* MeetingHeaderView.swift */; };
+		5A4A24D9264EDD3800C17B17 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24D8264EDD3800C17B17 /* AVPlayer+Ding.swift */; };
+		5A4A24DB264EDD4600C17B17 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24DA264EDD4600C17B17 /* ScrumTimer.swift */; };
+		5A4A24DD264EE51E00C17B17 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24DC264EE51E00C17B17 /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		5A2BA356264E3F7200F882B4 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		5A2BA358264E3F7700F882B4 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		5A2BA35B264E400A00F882B4 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		5A2BA35D264ED12800F882B4 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		5A4A24D8264EDD3800C17B17 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		5A4A24DA264EDD4600C17B17 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
+		5A4A24DC264EE51E00C17B17 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 				5A2BA336264E3C0100F882B4 /* Assets.xcassets */,
 				5A2BA33B264E3C0100F882B4 /* Info.plist */,
 				5A2BA338264E3C0100F882B4 /* Preview Content */,
+				5A2BA35D264ED12800F882B4 /* MeetingHeaderView.swift */,
+				5A4A24DC264EE51E00C17B17 /* MeetingFooterView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 		5A2BA355264E3F2F00F882B4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A4A24DA264EDD4600C17B17 /* ScrumTimer.swift */,
+				5A4A24D8264EDD3800C17B17 /* AVPlayer+Ding.swift */,
 				5A2BA358264E3F7700F882B4 /* DailyScrum.swift */,
 				5A2BA356264E3F7200F882B4 /* Color+Codable.swift */,
 			);
@@ -182,12 +194,16 @@
 				5A2BA346264E3D5A00F882B4 /* ScrumsView.swift in Sources */,
 				5A2BA34C264E3DB200F882B4 /* DetailView.swift in Sources */,
 				5A2BA357264E3F7200F882B4 /* Color+Codable.swift in Sources */,
+				5A4A24D9264EDD3800C17B17 /* AVPlayer+Ding.swift in Sources */,
+				5A4A24DD264EE51E00C17B17 /* MeetingFooterView.swift in Sources */,
 				5A2BA352264E3DD000F882B4 /* ScrumProgressViewStyle.swift in Sources */,
 				5A2BA359264E3F7800F882B4 /* DailyScrum.swift in Sources */,
+				5A4A24DB264EDD4600C17B17 /* ScrumTimer.swift in Sources */,
 				5A2BA348264E3D8F00F882B4 /* ScrumdingerApp.swift in Sources */,
 				5A2BA34A264E3DA900F882B4 /* EditView.swift in Sources */,
 				5A2BA34E264E3DBA00F882B4 /* CardView.swift in Sources */,
 				5A2BA354264E3E0A00F882B4 /* MeetingView.swift in Sources */,
+				5A2BA35E264ED12800F882B4 /* MeetingHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
