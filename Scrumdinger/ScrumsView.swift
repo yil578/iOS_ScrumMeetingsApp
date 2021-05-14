@@ -11,8 +11,12 @@ import SwiftUI
 struct ScrumsView: View {
     //let scrums: [DailyScrum]
     @Binding var scrums: [DailyScrum]
+    @Environment(\.scenePhase) private var scenePhase // SwiftUI indicates the current operational state of your app’s "Scene" instances with a scenePhase Environment value. "Observe this value" and save user data when it becomes inactive.
+    
     @State private var isPresented = false // when true, presents EditView
     @State private var newScrumData = DailyScrum.Data()
+    
+    let saveAction: () -> Void // constant closure property
     
     var body: some View {
         List {
@@ -45,6 +49,12 @@ struct ScrumsView: View {
                     })
             }
         }
+        // observing the scenePhase value
+        .onChange(of: scenePhase) { phase in
+            // when the scenephase becomes inactive, call saveAction()
+            if phase == .inactive { saveAction() }
+            // An inactive scene doesn’t receive events and should free any unnecessary resources, and may be unavailable to the user
+        }
     }
     
     // a utility method to retrieve a binding from an individual scrum
@@ -60,7 +70,7 @@ struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             //ScrumsView(scrums: DailyScrum.data)
-            ScrumsView(scrums: .constant(DailyScrum.data)) //pass a constant binding to the ScrumsView initializer
+            ScrumsView(scrums: .constant(DailyScrum.data), saveAction: {}) //pass a constant binding to the ScrumsView initializer and empty closure for saveAction argument
         }
     }
 }

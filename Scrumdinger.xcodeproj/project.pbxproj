@@ -24,6 +24,7 @@
 		5A4A24DB264EDD4600C17B17 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24DA264EDD4600C17B17 /* ScrumTimer.swift */; };
 		5A4A24DD264EE51E00C17B17 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24DC264EE51E00C17B17 /* MeetingFooterView.swift */; };
 		5A4A24DF264F13D500C17B17 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24DE264F13D500C17B17 /* History.swift */; };
+		5A4A24E1264F2C0900C17B17 /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A24E0264F2C0900C17B17 /* ScrumData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5A4A24DA264EDD4600C17B17 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		5A4A24DC264EE51E00C17B17 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		5A4A24DE264F13D500C17B17 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5A4A24E0264F2C0900C17B17 /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5A4A24D8264EDD3800C17B17 /* AVPlayer+Ding.swift */,
 				5A2BA358264E3F7700F882B4 /* DailyScrum.swift */,
 				5A2BA356264E3F7200F882B4 /* Color+Codable.swift */,
+				5A4A24E0264F2C0900C17B17 /* ScrumData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				5A4A24DF264F13D500C17B17 /* History.swift in Sources */,
 				5A2BA357264E3F7200F882B4 /* Color+Codable.swift in Sources */,
 				5A4A24D9264EDD3800C17B17 /* AVPlayer+Ding.swift in Sources */,
+				5A4A24E1264F2C0900C17B17 /* ScrumData.swift in Sources */,
 				5A4A24DD264EE51E00C17B17 /* MeetingFooterView.swift in Sources */,
 				5A2BA352264E3DD000F882B4 /* ScrumProgressViewStyle.swift in Sources */,
 				5A2BA359264E3F7800F882B4 /* DailyScrum.swift in Sources */,

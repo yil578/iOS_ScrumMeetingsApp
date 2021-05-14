@@ -6,7 +6,7 @@ import Foundation
 
 
 /// Keeps time for a daily scrum meeting. Keep track of the total meeting time, the time for each speaker, and the name of the current speaker.
-// ScrumTimer conforms to ObservableObject protocol
+// ScrumTimer conforms to ObservableObject protocol. ObservableObject is a class-constrained protocol for connecting external model data to SwiftUI views.
 class ScrumTimer: ObservableObject {
     /// A struct to keep track of meeting attendees during a meeting.
     struct Speaker: Identifiable {

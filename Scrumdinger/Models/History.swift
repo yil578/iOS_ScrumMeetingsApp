@@ -4,7 +4,9 @@ See LICENSE folder for this sample’s licensing information.
 
 import Foundation
 
-struct History: Identifiable {
+// Codable is a type alias that combines the Encodable and Decodable protocols => allow you to use the Codable API to easily serialize data to and from JSON
+struct History: Identifiable, Codable {
+    // the structure’s properties are all Codable, so don’t have additional work to do
     let id: UUID
     let date: Date
     var attendees: [String]

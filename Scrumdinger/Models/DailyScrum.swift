@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct DailyScrum : Identifiable {
+struct DailyScrum : Identifiable, Codable {
     let id: UUID //requirement to comform to Identifiable protocol
     var title: String
     var attendees: [String]
     var lengthInMinutes: Int
-    var color: Color
+    var color: Color // Color isn’t Codable by default. The Color+Codable extension implements the init(from:) and encode(to:) methods that are necessary to make Color conform to Codable.
     var history: [History]
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, color: Color, history: [History] = []) {
